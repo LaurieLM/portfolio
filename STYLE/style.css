@@ -19,7 +19,9 @@ header {
   height: 3rem;
 }
 
-button {
+#accueil,
+#html-css,
+#javascript {
   position: absolute;
   height: 100%;
   width: 150px;
@@ -30,10 +32,18 @@ button {
     rgba(255, 224, 178, 1) 100%
   );
   filter: drop-shadow(0 0 1rem black);
+  box-shadow: inset 2px 2px 3px rgb(255 255 255 / 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
   font-size: 28px;
   border: 0px;
   border-radius: 12px;
   margin-top: 10px;
+}
+
+#accueil:hover,
+#html-css:hover,
+#javascript:hover {
+  background: rgb(255, 153, 0);
 }
 
 #accueil {
