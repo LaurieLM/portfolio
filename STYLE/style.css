@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Josefin sans", sans-serif;
+}
+
+h1,
+h2,
+button {
+  font-family: "Creepster", system-ui;
+}
+
+header {
+  position: relative;
+  height: 3rem;
+  background-color: #ffa726;
+}
+
+button {
+  position: absolute;
+  height: 100%;
+  width: 150px;
+  background-color: #ffa726;
+  font-size: 28px;
+  border: 1px solid black;
+}
+
+#accueil {
+  left: 40px;
+}
+#html-css {
+  right: 230px;
+}
+
+#javascript {
+  right: 40px;
+}
