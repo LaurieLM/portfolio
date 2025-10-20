@@ -1,27 +1,39 @@
 body {
   margin: 0;
   font-family: "Josefin sans", sans-serif;
+  text-align: center;
+  background-image: url(./fond_halloween.jpg);
+  background-size: cover;
 }
 
 h1,
 h2,
+h3,
 button {
   font-family: "Creepster", system-ui;
 }
 
+/* HEADER !!!!! */
 header {
   position: relative;
   height: 3rem;
-  background-color: #ffa726;
 }
 
 button {
   position: absolute;
   height: 100%;
   width: 150px;
-  background-color: #ffa726;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 167, 38, 1) 30%,
+    rgba(255, 195, 112, 1) 70%,
+    rgba(255, 224, 178, 1) 100%
+  );
+  filter: drop-shadow(0 0 1rem black);
   font-size: 28px;
-  border: 1px solid black;
+  border: 0px;
+  border-radius: 12px;
+  margin-top: 10px;
 }
 
 #accueil {
@@ -33,4 +45,51 @@ button {
 
 #javascript {
   right: 40px;
+}
+
+/* TITRE */
+h1,
+h2 {
+  filter: drop-shadow(0px 12px 19px #f7f2f2);
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 65px 0 0px 0;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 75px 0 50px 0;
+  filter: drop-shadow(0px 14px 15px #000000);
+}
+
+/* SECTION 1 */
+#presentation {
+  font-size: 18px;
+  padding: 0px 100px;
+  line-height: 25px;
+}
+
+/* SECTION 2 */
+#comp-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+/* SECTION 3 */
+#loisirs-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
 }
