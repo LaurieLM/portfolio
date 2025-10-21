@@ -9,11 +9,12 @@ body {
 h1,
 h2,
 h3,
+h4,
 button {
   font-family: "Creepster", system-ui;
 }
 
-/* HEADER !!!!! */
+/* HEADER  */
 header {
   position: relative;
   height: 3rem;
@@ -75,7 +76,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  margin: 75px 0 50px 0;
+  margin: 80px 0 50px 0;
   filter: drop-shadow(0px 14px 15px #000000);
 }
 
@@ -108,7 +109,129 @@ h3 {
 }
 
 .element2 {
-  margin-left: 15%;
   font-size: 18px;
   line-height: 25px;
+}
+
+/* PAGE HTML CSS */
+/* FLEX */
+.container {
+  padding: 0 150px;
+}
+
+.container-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 690px;
+  background: #432d0554;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container-second {
+  display: flex;
+  justify-content: center;
+}
+
+#flex-1440,
+#flex-1024 {
+  width: 48%;
+}
+
+#flex-1440 {
+  padding-right: 25px;
+}
+
+#flex-1024 {
+  padding-left: 25px;
+}
+
+#flex-html {
+  width: 75%;
+  height: 220px;
+  padding-right: 15px;
+}
+
+#flex-css {
+  width: 23%;
+  height: 220px;
+  padding-left: 15px;
+}
+
+.container p {
+  width: 44%;
+  font-size: 18px;
+  max-width: 50ch;
+  text-align: justify;
+  background: #d07000;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  padding: 10px 25px;
+}
+
+/* GRID */
+
+.grid-container-second {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .grid-container-third {
+  display: flex;
+  justify-content: space-between;
+} */
+
+#grid-result,
+#grid-html {
+  width: 45%;
+  height: 400px;
+}
+
+#grid-result {
+  padding-right: 25px;
+}
+
+#grid-html {
+  padding-left: 25px;
+}
+
+#grid-css1,
+#grid-css2 {
+  width: 20%;
+  height: 260px;
+}
+
+#grid-css1 {
+  padding-left: 150px;
+}
+
+#grid-css2 {
+  padding-right: 150px;
+}
+
+/* RESPONSIVE */
+.responsive-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 55px;
+  background: #432d0554;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
+#base-apparel {
+  text-decoration: none;
+  font-family: "Creepster", system-ui;
+  color: black;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+#base-apparel:hover {
+  color: #ba690d;
+  font-size: 34px;
 }
