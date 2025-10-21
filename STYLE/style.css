@@ -81,25 +81,34 @@ h3 {
 
 /* SECTION 1 */
 #presentation {
-  font-size: 18px;
-  padding: 0px 100px;
-  line-height: 25px;
-}
-
-/* SECTION 2 */
-#comp-container {
   display: flex;
-  justify-content: space-evenly;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: justify;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* SECTION 3 */
+#presentation p {
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 70ch;
+}
+
+/* SECTION 2 */ /* SECTION 3 */
+#comp-container,
 #loisirs-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 25%);
+  margin: 0px;
+  text-align: justify;
+  justify-content: center;
+}
+
+.element1 {
   font-size: 18px;
   line-height: 25px;
-  text-align: justify;
+}
+
+.element2 {
+  margin-left: 15%;
+  font-size: 18px;
+  line-height: 25px;
 }
