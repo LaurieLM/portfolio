@@ -110,6 +110,65 @@ const htmlCSS = `
             </div>
         </section>
 `;
+const javascript = `
+        <h1>JAVASCRIPT</h1>
+        <section class="container">
+            <h3>FONCTIONS</h3>
+            <p class="enonce">
+                Je vous présente ici 2 façons différentes de réaliser cet exercice sur les <strong>FONCTIONS</strong> où
+                la console doit retourner le
+                somme d'une addition.
+            </p>
+            <div class="javascript-container">
+                <img id="fonction-1" src="./ASSETS/Fonction_1.png" alt="">
+                <p>
+                    J'ai procéder de la manière suivante : <br><br>
+                    Création d'une <strong>FONCTION</strong> qui ne prend pas de paramètre<br>
+                    Ici l'addition se fait dans le <strong>consol.log</strong><br><br>
+                    Création d'une <strong>FONCTION</strong> qui prend en paramètre 3 nombres<br>
+                    Cela permet de créer directement des variables qui contiennent les nombres à additionner et de
+                    pouvoir les changer plus facilement
+                </p>
+            </div>
+            <p class="enonce">
+                Je vous présente ici un exercice sur les <strong>FONCTIONS</strong> où
+                la console doit retourner dans un premier temps le carré d'un nombre puis dans un deuxième temps le
+                résultat précédent multiplié par 10.
+            </p>
+            <div class="javascript-container" id="fonction-2-container">
+                <img id="fonction-2-img" src="./ASSETS/Fonction_2.png" alt="">
+                <p id="fonction-2-p">
+                    J'ai procéder de la manière suivante : <br><br>
+                    Création d'une fonction qui prend en paramètre un nombre <br>
+                    Création d'un <strong>"return number**2"</strong> qui permet de faire le carré du nombre donné<br>
+                    Création d'une variable qui permet de stocké le résultat de ce premier calcul <br><br>
+                    Création d'une nouvelle fonction qui prend en paramètre un nombre <br>
+                    Création d'un <strong>"return number*10"</strong> qui permet de multiplier le nombre par 10<br>
+                    J'appelle la deuxième fonction en lui passant le nom de la variable contenant le résultat de la
+                    première fonction en paramètre, cela récupère bien le carré du nombre donné et le multiplie par 10
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>CONDITIONS</h3>
+            <p class="enonce">
+                Je vous présente ici un exercice sur les <strong>CONDITIONS</strong> où la console doit retourner "Le
+                chiffre est : positif" ou "Le chiffre est : négatif" selon le cas.
+            </p>
+            <div class="javascript-container" id="condition-container">
+                <img id="condition-1" src="./ASSETS/Condition_1.png" alt="">
+                <p>
+                    J'ai procéder de la manière suivante : <br><br>
+                    Création d'une <strong>FONCTION</strong> qui prend en paramètre un nombre <br>
+                    Création d'une condition <strong>"IF / ELSE"</strong> à l'intérieur de la fonction
+                    En mettant <strong>"if (number >= 0)"</strong> cela permet de dire <strong>"Si le nombre est
+                        supérieur ou
+                        égal alors renvoie ça sinon tu renvoie ceci"</strong>
+                </p>
+            </div>
+        </section>
+`;
 
 // HTML
 buttonHtmlCss.addEventListener("click", () => {
@@ -118,7 +177,7 @@ buttonHtmlCss.addEventListener("click", () => {
 
 // JAVASCRIPT
 buttonJavascript.addEventListener("click", () => {
-  content.innerHTML = "";
+  content.innerHTML = javascript;
 });
 
 // ACCUEIL

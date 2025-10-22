@@ -160,7 +160,11 @@ h3 {
   padding-left: 15px;
 }
 
-.container p {
+.enonce {
+  margin: 100px 0 15px 0;
+}
+.container p,
+.enonce {
   width: 44%;
   font-size: 18px;
   max-width: 50ch;
@@ -177,11 +181,6 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-
-/* .grid-container-third {
-  display: flex;
-  justify-content: space-between;
-} */
 
 #grid-result,
 #grid-html {
@@ -234,4 +233,44 @@ h3 {
 #base-apparel:hover {
   color: #ba690d;
   font-size: 34px;
+}
+
+/* JAVASCRIPT  */
+/* FONCTIONS */ /* CONDITIONS */
+
+.javascript-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 350px;
+  background: #432d0554;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-around;
+}
+
+.javascript-container p {
+  line-height: 33px;
+  height: 300px;
+  background: #fca642;
+}
+
+#fonction-1,
+#fonction-2-img,
+#condition-1 {
+  width: 35%;
+  height: 350px;
+}
+
+#fonction-2-container {
+  height: 590px;
+  align-items: center;
+}
+#fonction-2-p {
+  width: 40%;
+  height: 530px;
+}
+
+#condition-container {
+  margin-bottom: 3rem;
 }
